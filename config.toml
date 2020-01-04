@@ -1,4 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = "https://davidclarance.github.io/bluethroat/"
 languageCode = "en-us"
 title = "the bluethroat"
 theme = "ink"
@@ -53,7 +53,7 @@ weight = 4
 [[params.social]]
 name = "Github"
 icon = "github"
-url = "https://github.com/knadh/ink"
+url = "https://github.com/davidclarance"
 
 [[params.social]]
 name = "RSS"

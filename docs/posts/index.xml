@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on the bluethroat</title>
-    <link>http://localhost:1313/posts/</link>
+    <link>http://localhost:1313/bluethroat/posts/</link>
     <description>Recent content in Posts on the bluethroat</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© MIT</copyright>
     <lastBuildDate>Mon, 23 Dec 2019 02:01:58 +0530</lastBuildDate>
     
-	<atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://localhost:1313/bluethroat/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Setting up a blog with Hugo</title>
-      <link>http://localhost:1313/posts/post-1/</link>
+      <link>http://localhost:1313/bluethroat/posts/post-1/</link>
       <pubDate>Mon, 23 Dec 2019 02:01:58 +0530</pubDate>
       
-      <guid>http://localhost:1313/posts/post-1/</guid>
+      <guid>http://localhost:1313/bluethroat/posts/post-1/</guid>
       <description>Why blog? Feel free to jump to the next section if you just want to learn how to use Hugo to set up a blog.
 Writing helps me learn. Every time I want to learn a new technique, method or library I open up a sublime tab and type a lot. It helps me think, work through difficult logic and often helps pin point the source of difficulty. Writing in the form of journaling helps my mental health (I don&#39;t have a source for this, it just works for me).</description>
     </item>

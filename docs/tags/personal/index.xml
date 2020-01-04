@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>personal on the bluethroat</title>
-    <link>http://localhost:1313/tags/personal/</link>
+    <link>http://localhost:1313/bluethroat/tags/personal/</link>
     <description>Recent content in personal on the bluethroat</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© MIT</copyright>
     <lastBuildDate>Mon, 23 Dec 2019 02:01:58 +0530</lastBuildDate>
     
-	<atom:link href="http://localhost:1313/tags/personal/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://localhost:1313/bluethroat/tags/personal/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>the bluethroat</title>
-      <link>http://localhost:1313/about/</link>
+      <link>http://localhost:1313/bluethroat/about/</link>
       <pubDate>Mon, 23 Dec 2019 02:01:58 +0530</pubDate>
       
-      <guid>http://localhost:1313/about/</guid>
+      <guid>http://localhost:1313/bluethroat/about/</guid>
       <description>The bluethroat is a tiny passerine bird.</description>
     </item>
     
     <item>
       <title>Who am i </title>
-      <link>http://localhost:1313/about/about-me/</link>
+      <link>http://localhost:1313/bluethroat/about/about-me/</link>
       <pubDate>Mon, 23 Dec 2019 02:01:58 +0530</pubDate>
       
-      <guid>http://localhost:1313/about/about-me/</guid>
+      <guid>http://localhost:1313/bluethroat/about/about-me/</guid>
       <description>This is where my about me section will live</description>
     </item>
     
