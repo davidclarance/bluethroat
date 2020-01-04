@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Setting up a blog with Hugo - the bluethroat</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta property="og:title" content="Setting up a blog with Hugo" />
+<meta property="og:description" content="Why and how I set up this blog" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/posts/post-1/" />
+<meta property="article:published_time" content="2019-12-23T02:01:58+05:30" />
+<meta property="article:modified_time" content="2019-12-23T02:01:58+05:30" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Setting up a blog with Hugo"/>
+<meta name="twitter:description" content="Why and how I set up this blog"/>
+<link href='https://fonts.googleapis.com/css?family=Playfair+Display:700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" media="screen" href="http://localhost:1313/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="http://localhost:1313/css/main.css" /><link rel="stylesheet" type="text/css" href="http://localhost:1313/css/dark.css" media="(prefers-color-scheme: dark)" />
+
+	<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+		<script src="http://localhost:1313/js/main.js"></script>
+</head>
+
+<body>
+	<div class="container wrapper">
+		<div class="header">
+	
+		<div class="avatar">
+			<a href="http://localhost:1313/">
+				<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.YA3Rqb66qyrU6uMSHkTJzAAAAA%26pid%3DApi&amp;f=1" alt="the bluethroat" />
+			</a>
+		</div>
+	
+	<h1 class="site-title"><a href="http://localhost:1313/">the bluethroat</a></h1>
+	<div class="site-description"><p>birds, code and algorithms</p><nav class="nav social">
+			<ul class="flat"><li><a href="https://github.com/knadh/ink" title="Github"><i data-feather="github"></i></a></li><li><a href="/index.xml" title="RSS"><i data-feather="rss"></i></a></li></ul>
+		</nav>
+	</div>
+
+	<nav class="nav">
+		<ul class="flat">
+			
+			<li>
+				<a href="/">Home</a>
+			</li>
+			
+			<li>
+				<a href="/posts">All posts</a>
+			</li>
+			
+			<li>
+				<a href="/about">About</a>
+			</li>
+			
+			<li>
+				<a href="/tags">Tags</a>
+			</li>
+			
+		</ul>
+	</nav>
+</div>
+
+
+		<div class="post">
+			<div class="post-header">
+				
+					<div class="meta">
+						<div class="date">
+							<span class="day">23</span>
+							<span class="rest">Dec 2019</span>
+						</div>
+					</div>
+				
+				<div class="matter">
+					<h1 class="title">Setting up a blog with Hugo</h1>
+				</div>
+			</div>
+					
+			<div class="markdown">
+				<h2 id="why-blog">Why blog?</h2>
+<p><em>Feel free to jump to the next section if you just want to learn how to use Hugo to set up a blog.</em></p>
+<p>Writing helps me learn. Every time I want to learn a new technique, method or library I open up a sublime tab and type a lot. It helps me think, work through difficult logic and often helps pin point the source of difficulty. Writing in the form of journaling helps my mental health (I don't have a source for this, it just works for me). Working through how I'm feeling helps reduce stress, anxiety and all the other crap that comes with PTSD. And while I write a LOT, I rarely do it formally and rarely store what I write. Sublime tabs aren't saved, phone notes are deleted and written pages are thrown away. It's pretty therapetuic to dump ideas or thoughts and then just get rid of them. While I've done and enjoyed this in the past, I sometimes regret not saving notes, especially when it comes to working out the logic of new concepts. I also generally want to get better at language and writing well. So in 2020 I want to write 12 blogs or more about things I've learned. I'm not sure what these are going to be but I suspect these will be related to causal inference, coding in python and R and my new love for Microsoft's incredible editor VS Code. I might also throw in a blog or two about birds. Who knows?</p>
+<h2 id="setting-up-a-blog-with-hugo">Setting up a blog with Hugo</h2>
+<p>These instructions are windows users. I'd imagine that mac and linux would be similar.</p>
+<p>Before we start, what is Hugo? Simply put, Hugo's a framework for building static websites. Let's break that down. Hugo's a library or program or machine to produce websites that are not directly linked to a live server. So you can use Hugo to make websites that don't require constant updates in real time. This means that this is best suited to blogs or personal pages or documentation.</p>
+<p>So our final output is a folder that has a bunch of HTML files that we'll &lsquo;upload&rsquo; to somewhere on the internet.</p>
+<h3 id="step-1-download-hugo">Step 1: Download Hugo</h3>
+<p>The first step is to download Hugo, the engine to create our website. You can go to this <a href="https://github.com/gohugoio/hugo/releases">link</a> and scroll to the section that says assets. Scroll to the bottom and find the version of Hugo that corresponds to the OS you're using. So in my case because I have a Windows 64 bit machine, I used <code>hugo_0.61.0_Windows-64bit.zip</code>. Download the file somewhere on your computer.</p>
+<h3 id="step-2-creating-a-path-variable-to-hugo">Step 2: Creating a PATH variable to Hugo</h3>
+<p>It's super helpful to create a PATH variable to Hugo before you start on anything. This is the step that most online tutorials just assumed the user would do themselves. However it can be tricky if you don't fully understand what PATH variables are. PATH variables create a link between a command in the terminal and the file to run when you call that command.</p>
+<p>For instance, if I want to run MS WORD for the terminal (I don't know why I would want to), we can create a command called <code>word</code> and put it in PATH. How would we do this? We would need to put the destination (something like C:\Users\david.clarance\Word) which contains the word.exe file. So to create a PATH variable for Hugo do the following:</p>
+<ul>
+<li>Go to Control Panel &gt; System and Security &gt; System</li>
+<li>Click Advanced System Settings on the left tab</li>
+<li>Click on the Enviornment Variables button on the bottom left.</li>
+<li>Find the variable that says Path in both the User and System settings.</li>
+<li>Add a new item and put the directory where the hugo.exe file lives. So for instance, I created a new folder in my C drive and put the hugo.exe file in it. Then I added &lsquo;C:\Hugo' to the path in both system and user settings. Note the slash after Hugo!</li>
+</ul>
+<p>Once you've done the above, open a new terminal/command-prompt window and type <code>hugo help</code>. You should see a list of commands. If there is an error that says that something's missing then you need to figure out what steps in the instructions listed above you missed or got wrong.</p>
+<h3 id="step-3-create-a-new-hugo-website">Step 3: Create a new Hugo website</h3>
+<p>Now that we've installed and put HUGO in our PATH. It's time to create a new website!</p>
+<p>Assume that I want to create a new website in a folder called david-hugo-blog in my Documents folder. So let's kick up a new terminal instance. And do the following</p>
+<ul>
+<li>Create a new folder in Documents called david-hugo-blog.</li>
+<li>cd to that directory in the terminal</li>
+<li>Type the following:</li>
+</ul>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">-- cd to Documents in terminal 
+&gt; cd Documents
+
+-- create hugo new website
+&gt; hugo new site david-hugo-blog
+</code></pre></div><p>Once you've done this, there'll be a bunch of files and folders created in david-hugo-blog.</p>
+<h3 id="step-4-set-a-theme">Step 4: Set a theme</h3>
+<p>Hugo is pretty powerful and <a href="https://themes.gohugo.io/">has a ton of themes</a>. You'll need to decide on one before you start. I chose the theme called <a href="https://themes.gohugo.io/">hugo-ink</a> because I wanted something simple, clean and organized. Which ever theme you use, you'll need put it in the themes folder in david-hugo-blog. To do this, you'll need to have the path on github to the themes repository. Once you have this do the following:</p>
+<p>(assuming you are in david-hugo-blog)</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">-- this takes you to the themes folder
+&gt; cd themes 
+
+-- install the theme directly from git
+&gt; git clone https://github.com/knadh/hugo-ink.git
+</code></pre></div><p>This will download the git repository for the theme into a folder called hugo-ink in the themes folder.</p>
+<p>Now, this is the bit thats a bit tricky. So follow these instructions carefully.</p>
+<ol>
+<li>In the hugo-ink folder, there's be a folder called exampleSite. Go to this folder.</li>
+<li>From this folder copy the config.toml file and paste in the root folder for the website (for me this will be in the folder called david-hugo-blog)</li>
+</ol>
+<h3 id="step-5-building-the-website">Step 5: Building the website.</h3>
+<p>Once everything is ready, it's now very simple. cd to the root folder (david-hugo-blog) and then run the following commands</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">hugo server -t hugo-ink -d docs
+</code></pre></div><hr>
+
+			</div>
+
+			<div class="tags">
+				
+					
+						<ul class="flat">
+							
+							<li><a href="/tags/tutorial">tutorial</a></li>
+							
+						</ul>
+					
+				
+			</div><div id="disqus_thread"></div>
+<script type="text/javascript">
+	(function () {
+		
+		
+		if (window.location.hostname == "localhost")
+			return;
+
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		var disqus_shortname = 'ink-demo';
+		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	})();
+</script>
+<noscript>Please enable JavaScript to view the </a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+	</div>
+	<div class="footer wrapper">
+	<nav class="nav">
+		<div> © MIT |  <a href="https://github.com/knadh/hugo-ink">Ink</a> theme on <a href="https://gohugo.io">Hugo</a></div>
+	</nav>
+</div>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-123-45', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<script>feather.replace()</script>
+<script data-no-instant>document.write('<script src="/livereload.js?port=1313&mindelay=10&v=2"></' + 'script>')</script></body>
+</html>
