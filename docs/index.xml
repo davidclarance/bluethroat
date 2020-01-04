@@ -2,32 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>the bluethroat</title>
-    <link>http://localhost:1313/bluethroat/</link>
+    <link>https://davidclarance.github.io/bluethroat/</link>
     <description>Recent content on the bluethroat</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© MIT</copyright>
     <lastBuildDate>Mon, 23 Dec 2019 02:01:58 +0530</lastBuildDate>
     
-	<atom:link href="http://localhost:1313/bluethroat/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://davidclarance.github.io/bluethroat/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Setting up a blog with Hugo</title>
-      <link>http://localhost:1313/bluethroat/posts/post-1/</link>
+      <link>https://davidclarance.github.io/bluethroat/posts/post-1/</link>
       <pubDate>Mon, 23 Dec 2019 02:01:58 +0530</pubDate>
       
-      <guid>http://localhost:1313/bluethroat/posts/post-1/</guid>
+      <guid>https://davidclarance.github.io/bluethroat/posts/post-1/</guid>
       <description>Why blog? Feel free to jump to the next section if you just want to learn how to use Hugo to set up a blog.
 Writing helps me learn. Every time I want to learn a new technique, method or library I open up a sublime tab and type a lot. It helps me think, work through difficult logic and often helps pin point the source of difficulty. Writing in the form of journaling helps my mental health (I don&#39;t have a source for this, it just works for me).</description>
     </item>
     
     <item>
       <title>the bluethroat</title>
-      <link>http://localhost:1313/bluethroat/about/</link>
+      <link>https://davidclarance.github.io/bluethroat/about/</link>
       <pubDate>Mon, 23 Dec 2019 02:01:58 +0530</pubDate>
       
-      <guid>http://localhost:1313/bluethroat/about/</guid>
+      <guid>https://davidclarance.github.io/bluethroat/about/</guid>
       <description>The bluethroat is a tiny, beautiful bird. I&#39;m not sure how and when I came across it but when I did, I couldn&#39;t stop thinking about it. I read everything I could about it, I looked at a million pictures online and even got a t-shirt painted with it. I was overjoyed to find that it winters in India and spent a considerable amount of time trying to track it down.</description>
     </item>
     
